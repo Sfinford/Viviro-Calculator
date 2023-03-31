@@ -1,0 +1,84 @@
+body {
+    height: 100vh;
+    background: linear-gradient(to bottom, #4d4dff, #33ccff);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+h1 {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+  }
+  
+  .display {
+    border: 1px solid #000;
+    background-color: #fff;
+    border-radius: 4px;
+    height: 50px;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: right;
+    width: 290px;
+    box-sizing: border-box;
+    outline: none; /* added */
+  }
+  
+  
+  .display input {
+    width: 100%;
+    height: 100%;
+    font-size: 28px;
+    text-align: right;
+    padding-right: 0px;
+    border: none;
+    outline: none;
+  }
+  
+  .keys {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .number,
+  .operator,
+  .equal,
+  .clear,
+  .parenthesis {
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .clear {
+    width: 290px;
+    margin-top: 10px;
+  }
+  
+  .operator,
+  .parenthesis {
+    background-color: #e2e2e2;
+  }
+  
+  .operator:hover,
+  .equal:hover,
+  .clear:hover,
+  .parenthesis:hover {
+    background-color: #cfcfcf;
+  }
+  
+  .number:hover {
+    background-color: #d9d9d9;
+  }
+  
